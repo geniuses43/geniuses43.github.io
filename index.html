@@ -41,6 +41,24 @@
 	<li>Пункт 4</li>
 </ol>
 
+<Code>
+	class Visitor implements NodeVisitor {
+	<br>
+	private ListType currentListType;
+	<br>
+	//    private int CountInt = 1;
+	<br>
+	private Stack < Integer > listCounters = new Stack<>(); // Стак, отвечающий за вложенность списков.
+	<br>
+	private OutputType outputType;
+	<br>
+	private StringBuilder result = new StringBuilder();
+	<br>
+	public Visitor(OutputType outputType) {
+	<br>
+	this.outputType = outputType;
+</Code>
+
 <blockquote>
     <p><i>Хотели сделать хорошо, а получилось как обычно.</i></p>
 </blockquote>
